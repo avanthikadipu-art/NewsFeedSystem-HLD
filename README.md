@@ -4,31 +4,21 @@
 
 This project presents the High-Level Design (HLD) of a scalable News Feed System similar to Facebook, Instagram, and Twitter.
 
-The system enables users to:
-- Register and authenticate
-- Follow and unfollow users
-- Create text, image, and video posts
-- View personalized news feeds
-- Like, comment, and share posts
-- Search users and posts
-- View trending content
-
-The architecture is designed to support millions of users while maintaining high availability, scalability, and low latency.
+The proposed architecture is designed to support millions of users while ensuring high scalability, availability, fault tolerance, and low latency.
 
 ---
 
 ## Features
 
-- User Management
-- Authentication
-- Follow / Unfollow
-- Post Creation
-- Feed Generation
-- Likes
-- Comments
-- Shares
-- Search
+- User Registration & Authentication
+- User Profile Management
+- Follow / Unfollow Users
+- Create Text, Image & Video Posts
+- Personalized News Feed
+- Like, Comment & Share Posts
+- Search Users & Posts
 - Trending Feed
+- Notifications
 
 ---
 
@@ -41,26 +31,82 @@ NewsFeedSystem-HLD
 ├── docs
 │   ├── HLD.md
 │   └── Technical_Design.md
+│
 ├── api
 │   └── API.md
+│
 ├── images
+│   ├── architecture.png
+│   ├── er_diagram.png
+│   ├── data_flow.png
+│   └── sequence_diagram.png
+│
 └── implementation
+    └── README.md
 ```
 
 ---
 
-## Technologies
+## Technology Stack
 
-- REST API
+- Java / Spring Boot
+- REST APIs
 - PostgreSQL
 - Cassandra
 - Redis
-- Kafka
+- Apache Kafka
+- Amazon S3
 - CDN
-- Object Storage
+- Docker
+- Kubernetes
 
 ---
 
-## Author
+# Documentation
 
-Avanthika
+| Document | Description |
+|----------|-------------|
+| HLD.md | High-Level System Design |
+| Technical_Design.md | Scalability, Security, Reliability & Design Decisions |
+| API.md | REST API Documentation |
+
+---
+
+## System Architecture and Design Diagrams
+
+The following diagram illustrates the overall architecture, database design, data flow, and sequence of operations in the proposed News Feed System.
+
+![System Design Diagrams](images/system_design_diagrams.png)
+
+# Scalability Highlights
+
+- Microservices Architecture
+- Redis Distributed Cache
+- Apache Kafka Messaging
+- Cassandra for High Write Throughput
+- PostgreSQL for Relational Data
+- CDN for Media Delivery
+- Hybrid Feed Generation Strategy
+
+---
+
+# Future Enhancements
+
+- AI-based Feed Ranking
+- Push Notifications
+- Live Streaming
+- Story Feature
+- Video Reels
+- Machine Learning-based Recommendations
+
+
+---
+
+# Conclusion
+
+This repository demonstrates the High-Level Design of a scalable News Feed System using modern distributed system principles. The proposed architecture emphasizes scalability, reliability, security, and maintainability, making it suitable for large-scale social networking platforms.
+
+
+# Author
+
+**Avanthika**
