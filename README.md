@@ -1,6 +1,6 @@
 # News Feed System - High Level Design
 
-## Overview
+## Project Overview
 
 This project presents the High-Level Design (HLD) of a scalable News Feed System similar to Facebook, Instagram, and Twitter.
 
@@ -17,48 +17,34 @@ The architecture is designed to support millions of users while maintaining high
 
 ---
 
-## Functional Requirements
+## Features
 
-- User Registration and Authentication
-- Follow/Unfollow Users
-- Create/Edit/Delete Posts
-- Personalized News Feed
-- Like, Comment and Share Posts
-- Search Users and Posts
-- Trending Posts
-- Media Upload Support
-
----
-
-## Non-Functional Requirements
-
-- Scalability
-- High Availability
-- Low Latency
-- Fault Tolerance
-- Reliability
-- Security
-- Extensibility
+- User Management
+- Authentication
+- Follow / Unfollow
+- Post Creation
+- Feed Generation
+- Likes
+- Comments
+- Shares
+- Search
+- Trending Feed
 
 ---
 
 ## Project Structure
 
 ```
-docs/
-    HLD.md
-    Technical_Design.md
-
-api/
-    API.md
-
-images/
-    Architecture Diagram
-    ER Diagram
-    Data Flow Diagram
-
-implementation/
-    Optional Implementation
+NewsFeedSystem-HLD
+│
+├── README.md
+├── docs
+│   ├── HLD.md
+│   └── Technical_Design.md
+├── api
+│   └── API.md
+├── images
+└── implementation
 ```
 
 ---
@@ -66,14 +52,12 @@ implementation/
 ## Technologies
 
 - REST API
-- Redis
-- Kafka
 - PostgreSQL
 - Cassandra
-- Object Storage
+- Redis
+- Kafka
 - CDN
-- Docker
-- Kubernetes
+- Object Storage
 
 ---
 
